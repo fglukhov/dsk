@@ -1,0 +1,31 @@
+@media only screen and (min-width: 768px) {
+
+  .revealing {
+    position: relative;
+    display: inline-block;
+  }
+
+  .revealing {
+    position: relative;
+  }
+
+  .revealing-content {
+    display: inline;
+    opacity: 0;
+  }
+
+  .revealing-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #080b14;
+  }
+
+  .map-legend,
+  .about-numbers-item {
+    /*transition: all .75s ease;*/
+    transition: none;
+  }
+
+}

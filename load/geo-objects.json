@@ -1,0 +1,265 @@
+{
+	"type": "ObjectsCollection",
+	"objects": [
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"55.758118",
+					"37.659037"
+				]
+			},
+			"properties": {
+				"id": 1,
+				"url": "#",
+				"name": "Лондон",
+				"brands": ["Adidas","Reebok"],
+				"metro": [
+					{
+						"color": "#0078BE",
+						"name": "Курская"
+					},
+					{
+						"color": "#99CC00",
+						"name": "Чкаловская"
+					}
+				],
+				"address": "ул. Земляной Вал, 33, ТЦ Атриум",
+				"phones": [
+					{
+						"number": "+7 (495) 362-48-80",
+						"name": "касса"
+					},
+					{
+						"number": "+7 (495) 787-7-05",
+						"name": "офис"
+					}
+				]
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"55.758118",
+					"37.659037"
+				]
+			},
+			"properties": {
+				"id": 2,
+				"url": "#",
+				"name": "Жемчужина России",
+				"brands": ["Adidas"],
+				"metro": [
+					{
+						"color": "#0078BE",
+						"name": "Курская"
+					}
+				],
+				"address": "ул. Земляной Вал, 33, ТЦ Атриум",
+				"phones": [
+					{
+						"number": "+7 (495) 362-48-80",
+						"name": "касса"
+					},
+					{
+						"number": "+7 (495) 787-7-05",
+						"name": "офис"
+					}
+				]
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"55.761978",
+					"37.566439"
+				]
+			},
+			"properties": {
+				"id": 3,
+				"url": "#",
+				"name": "Люксембург",
+				"brands": ["Adidas"],
+				"metro": [
+					{
+						"color": "800080",
+						"name": "Улица 1905 года"
+					}
+				],
+				"address": "Улица 1905 года",
+				"phones": [
+					{
+						"number": "+7 (495) 222-48-80",
+						"name": "касса"
+					},
+					{
+						"number": "+7 (495) 333-7-05",
+						"name": "офис"
+					}
+				]
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"55.774409",
+					"37.655695"
+				]
+			},
+			"properties": {
+				"id": 4,
+				"url": "#",
+				"name": "Лондон",
+				"brands": ["Adidas", "Reebok"],
+				"metro": [
+					{
+						"color": "#EF161E",
+						"name": "Комсомольская"
+					}
+				],
+				"address": "Комсомольская площадь",
+				"phones": [
+					{
+						"number": "+7 (495) 362-48-80",
+						"name": "касса"
+					},
+					{
+						"number": "+7 (495) 787-7-05",
+						"name": "офис"
+					}
+				]
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"55.623904",
+					"37.668706"
+				]
+			},
+			"properties": {
+				"id": 5,
+				"url": "#",
+				"name": "Жемчужина России",
+				"brands": ["Adidas","Reebok"],
+				"metro": [
+					{
+						"color": "#2DBE2C",
+						"name": "Царицыно"
+					}
+				],
+				"address": "ул. Земляной Вал, 33, ТЦ Атриум",
+				"phones": [
+					{
+						"number": "+7 (495) 362-48-80",
+						"name": "касса"
+					},
+					{
+						"number": "+7 (495) 787-7-05",
+						"name": "офис"
+					}
+				]
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"55.690080",
+					"37.535471"
+				]
+			},
+			"properties": {
+				"id": 6,
+				"url": "#",
+				"name": "Люксембург",
+				"brands": ["Adidas"],
+				"metro": [
+					{
+						"color": "#EF161E",
+						"name": "Университет"
+					}
+				],
+				"address": "ул. Земляной Вал, 33, ТЦ Атриум",
+				"phones": [
+					{
+						"number": "+7 (495) 362-48-80",
+						"name": "касса"
+					},
+					{
+						"number": "+7 (495) 787-7-05",
+						"name": "офис"
+					}
+				]
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"55.754535",
+					"37.629938"
+				]
+			},
+			"properties": {
+				"id": 7,
+				"url": "#",
+				"name": "Лондон",
+				"brands": ["Adidas"],
+				"metro": [
+					{
+						"color": "#800080",
+						"name": "Китай-Город"
+					}
+				],
+				"address": "Жемчужина России",
+				"phones": [
+					{
+						"number": "+7 (495) 222-48-80",
+						"name": "касса"
+					},
+					{
+						"number": "+7 (495) 333-7-05",
+						"name": "офис"
+					}
+				]
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"55.772701",
+					"37.634704"
+				]
+			},
+			"properties": {
+				"id": 8,
+				"url": "#",
+				"name": "Люксембург",
+				"brands": ["Adidas", "Reebok"],
+				"metro": [
+					{
+						"color": "#ED9121",
+						"name": "Сухаревская"
+					}
+				],
+				"address": "ул. Сухаревская",
+				"phones": [
+					{
+						"number": "+7 (495) 362-48-80",
+						"name": "касса"
+					},
+					{
+						"number": "+7 (495) 787-7-05",
+						"name": "офис"
+					}
+				]
+			}
+		}
+	]
+}

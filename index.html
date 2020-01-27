@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+    body {padding: 15px;}
+    ol {
+      list-style-type: none;
+      counter-reset: item;
+      margin: 0;
+      padding: 0;
+      }
+    
+      ol > li {
+        display: table;
+        counter-increment: item;
+        margin-bottom: 0.6em;
+      }
+    
+      ol > li:before {
+        content: counters(item, ".") ". ";
+        display: table-cell;
+        padding-right: 0.6em;
+      }
+    
+      li ol {
+        margin-top:10px;
+      }
+      li ol > li {
+      li ol > li {
+      li ol > li {
+        margin: 0;
+      }
+    
+      li ol > li:before {
+        content: counters(item, ".") " ";
+      }
+  </style>
+  <body>
+    <ol>
+      <li><a href="home.html">Главная (lg, md, sm)</a></li>
+      <li><a href="about.html">О компании (lg, md)</a></li>
+      <li><a href="actions.html">Акции (lg, md, sm)</a>
+        <ol>
+          <li><a href="actions-item.html">Страница акции (lg, md, sm)</a></li>
+        </ol>
+      </li>
+      <li><a href="catalog.html">Проекты (lg, md, sm)</a>
+        <ol>
+          <li><a href="catalog-item.html">Страница проекта (lg, md, sm)</a></li>
+        </ol>
+      </li>
+      <li><a href="services.html">Услуги (lg, md)</a>
+        <ol>
+          <li><a href="services-item.html">Страница услуги (lg, md)</a></li>
+        </ol>
+      </li>
+      <li><a href="calculator.html">Калькулятор (lg, md)</a></li>
+    </ol>
+  </body>
+</html>

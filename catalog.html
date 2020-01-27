@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ДСК</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <div class="up-link"></div>
+    <div class="over-wrapper">
+      <div id="mobile-indicator"></div>
+      <div id="sm-indicator"></div>
+      <header>
+        <div class="header-content">
+          <div class="row">
+            <div class="header-col-1">
+              <div class="header-logo"><a href="/">
+                  <div class="d-none d-md-block"><img src="images/logo.svg" alt="ДСК"></div>
+                  <div class="d-block d-md-none"><img src="images/logo-mob.svg" alt="ДСК"></div></a></div>
+            </div>
+            <div class="header-col-2">
+              <div class="navbar-trigger"><span></span><span></span><span></span></div>
+              <div class="navbar-wrapper">
+                <div class="navbar-wrapper-inner">
+                  <div class="close"></div>
+                  <div class="menu-logo d-block d-md-none"><a href="#"><img src="images/logo-menu-mob.svg" alt="ДСК"></a></div>
+                  <ul class="nav navbar-nav">
+                    <li><a href="#"><span>Проекты</span></a></li>
+                    <li><a href="#"><span>Услуги</span></a></li>
+                    <li><a href="#"><span>Цены</span></a></li>
+                    <li><a href="#"><span>Акции</span></a></li>
+                    <li><a href="#"><span>Технологии</span></a></li>
+                    <li><a class="active" href="#"><span>О компании</span></a></li>
+                    <li><a href="#"><span>Контакты</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header-col-3">
+              <div class="header-contacts">
+                <div class="header-phone"><a href="tel:+7 (495) 181-15-17">+7 (495) 181-15-17</a></div>
+                <div class="header-timetable">
+                  <p>Пн-Пт: 9:00-18:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="header-col-4">
+              <div class="header-buttons">
+                <div class="btn-header-search"></div>
+                <div class="btn-header-calc"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-search">
+          <div class="header-search-form">
+            <div class="form-group">
+              <input type="text" name="header_search" id="header_search" placeholder="Что вы ищете?" required>
+            </div>
+            <button class="btn-header-search-submit" type="submit"></button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="page-wrapper">
+          <!-- Преимущества-->
+          <div class="section section-top-pros" style="background-image:url(files/section-top-pros-bg.jpg);">
+            <div class="section-content">
+              <div class="container">
+                <div class="top-pros-list">
+                  <div class="row">
+                    <div class="col-6 col-md-3">
+                      <div class="top-pros-tmb">
+                        <div class="top-pros-tmb-pic"><img src="images/top-pros-1.svg"></div>
+                        <div class="top-pros-tmb-descr">
+                          <p>Свое<br>производство</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="top-pros-tmb">
+                        <div class="top-pros-tmb-pic"><img src="images/top-pros-2.svg"></div>
+                        <div class="top-pros-tmb-descr">
+                          <p>Более 15&nbsp;лет<br>работы</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="top-pros-tmb">
+                        <div class="top-pros-tmb-pic"><img src="images/top-pros-3.svg"></div>
+                        <div class="top-pros-tmb-descr">
+                          <p>Реализовано<br>1200&nbsp;проектов</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="top-pros-tmb">
+                        <div class="top-pros-tmb-pic"><img src="images/top-pros-4.svg"></div>
+                        <div class="top-pros-tmb-descr">
+                          <p>Сотни довольных<br>семей</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Преимущества END-->
+          <!-- Заголовок страницы-->
+          <div class="page-header">
+            <div class="container">
+              <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><span>Проекты</span></li>
+              </ul>
+              <div class="h1">Проекты</div>
+            </div>
+          </div>
+          <!-- Заголовок страницы END-->
+          <!-- Мобильные кнопки-->
+          <div class="d-block d-md-none">
+            <div class="mob-controls">
+              <div class="btn-mob-controls" data-mob-popup="#filterPopup"><span>Фильтр</span></div>
+              <div class="btn-mob-controls" data-mob-popup="#sortPopup"><span>Сортировка</span></div>
+            </div>
+          </div>
+          <!-- Мобильные кнопки END-->
+          <!-- Фильтр-->
+          <div class="mob-popup mob-popup-filter" id="filterPopup">
+            <div class="close"></div>
+            <div class="mob-popup-content">
+              <div class="catalog-filter filter-form">
+                <form>
+                  <div class="container">
+                    <div class="d-block d-md-none">
+                      <div class="h2">Фильтр</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="form-group">
+                          <label>Цена, млн. руб.</label>
+                          <div class="range-wrapper">
+                            <div class="range-fields">
+                              <div class="range-field">
+                                <input class="numeric-float filter-input-from" type="text" name="filter_price_from" id="filter_price_from">
+                              </div>
+                              <div class="range-sep">&mdash;</div>
+                              <div class="range-field">
+                                <input class="numeric-float filter-input-to" type="text" name="filter_price_to" id="filter_price_to">
+                              </div>
+                            </div>
+                            <div class="range-slider" data-min="1.5" data-max="15" data-step="0.5"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="form-group">
+                          <label>Площадь, м&sup2;</label>
+                          <div class="range-wrapper">
+                            <div class="range-fields">
+                              <div class="range-field">
+                                <input class="numeric-float filter-input-from" type="text" name="filter_area_from" id="filter_area_from">
+                              </div>
+                              <div class="range-sep">&mdash;</div>
+                              <div class="range-field">
+                                <input class="numeric-float filter-input-to" type="text" name="filter_area_to" id="filter_area_to">
+                              </div>
+                            </div>
+                            <div class="range-slider" data-min="80" data-max="450" data-step="10"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="form-group">
+                          <label for="filter_material">Материал</label>
+                          <select name="filter_material" id="filter_material" title="Выберите материал">
+                            <option value="" disabled selected></option>
+                            <option value="1">Дерево</option>
+                            <option value="2">Кирпич</option>
+                            <option value="3">Пенобетонный блок</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="form-footer d-none d-md-block">
+                          <label class="d-none d-md-block">&nbsp;</label>
+                          <button class="btn btn-2" type="submit">Подобрать проект</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-expandable expandable">
+                      <div class="expandable-content">
+                        <div class="row">
+                          <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                            <div class="form-group">
+                              <label>По размеру:</label>
+                              <div class="form-checkboxes">
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_size_1" id="filter_size_1">
+                                  <label for="filter_size_1">7 &times; 9 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_size_2" id="filter_size_2">
+                                  <label for="filter_size_2">8 &times; 8 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_size_3" id="filter_size_3">
+                                  <label for="filter_size_3">8 &times; 10 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_size_4" id="filter_size_4">
+                                  <label for="filter_size_4">8 &times; 14 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_size_5" id="filter_size_5">
+                                  <label for="filter_size_5">9 &times; 10 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_size_6" id="filter_size_6">
+                                  <label for="filter_size_6">9 &times; 11 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_size_7" id="filter_size_7">
+                                  <label for="filter_size_7">9 &times; 12 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_size_8" id="filter_size_8">
+                                  <label for="filter_size_8">10 &times; 13 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_size_9" id="filter_size_9">
+                                  <label for="filter_size_9">12 &times; 20 м</label>
+                                </div>
+                                <div class="expandable">
+                                  <div class="expandable-content">
+                                    <div class="form-checkbox">
+                                      <input type="checkbox" name="filter_size_10" id="filter_size_10">
+                                      <label for="filter_size_10">9 &times; 12 м</label>
+                                    </div>
+                                    <div class="form-checkbox">
+                                      <input type="checkbox" name="filter_size_11" id="filter_size_11">
+                                      <label for="filter_size_11">10 &times; 13 м</label>
+                                    </div>
+                                    <div class="form-checkbox">
+                                      <input type="checkbox" name="filter_size_12" id="filter_size_12">
+                                      <label for="filter_size_12">12 &times; 20 м</label>
+                                    </div>
+                                  </div>
+                                  <div class="expandable-trigger-wrapper">
+                                    <div class="expandable-trigger" data-expandtext="Показать еще" data-collapsetext="Скрыть"><span>Показать еще</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                            <div class="form-group">
+                              <label>По этажности:</label>
+                              <div class="form-checkboxes">
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_floors_1" id="filter_floors_1">
+                                  <label for="filter_floors_1">Одноэтажные</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_floors_2" id="filter_floors_2">
+                                  <label for="filter_floors_2">Двухэтажные</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_floors_3" id="filter_floors_3">
+                                  <label for="filter_floors_3">Трехэтажные</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_floors_4" id="filter_floors_4">
+                                  <label for="filter_floors_4">Четырехэтажные</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                            <div class="form-group">
+                              <label>Количество спален:</label>
+                              <div class="form-checkboxes">
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_bedrooms_1" id="filter_bedrooms_1">
+                                  <label for="filter_bedrooms_1">1</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_bedrooms_2" id="filter_bedrooms_2">
+                                  <label for="filter_bedrooms_2">2</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_bedrooms_3" id="filter_bedrooms_3">
+                                  <label for="filter_bedrooms_3">3</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_bedrooms_4" id="filter_bedrooms_4">
+                                  <label for="filter_bedrooms_4">4</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_bedrooms_5" id="filter_bedrooms_5">
+                                  <label for="filter_bedrooms_5">5</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                            <div class="form-group">
+                              <label>Количество санузлов:</label>
+                              <div class="form-checkboxes">
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_baths_1" id="filter_baths_1">
+                                  <label for="filter_baths_1">1</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_baths_2" id="filter_baths_2">
+                                  <label for="filter_baths_2">2</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_baths_3" id="filter_baths_3">
+                                  <label for="filter_baths_3">3</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_baths_4" id="filter_baths_4">
+                                  <label for="filter_baths_4">4</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                            <div class="form-group">
+                              <label>Высота потолков:</label>
+                              <div class="form-checkboxes">
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_ceiling_1" id="filter_ceiling_1">
+                                  <label for="filter_ceiling_1">2,40 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_ceiling_2" id="filter_ceiling_2">
+                                  <label for="filter_ceiling_2">2,80 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_ceiling_3" id="filter_ceiling_3">
+                                  <label for="filter_ceiling_3">3,00 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_ceiling_4" id="filter_ceiling_4">
+                                  <label for="filter_ceiling_4">3,20 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_ceiling_5" id="filter_ceiling_5">
+                                  <label for="filter_ceiling_5">3,40 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_ceiling_6" id="filter_ceiling_6">
+                                  <label for="filter_ceiling_6">3,60 м</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_ceiling_7" id="filter_ceiling_7">
+                                  <label for="filter_ceiling_7">3,80 м</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                            <div class="form-group">
+                              <label>Пристройки:</label>
+                              <div class="form-checkboxes">
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_extension_1" id="filter_extension_1">
+                                  <label for="filter_extension_1">Балкон</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_extension_2" id="filter_extension_2">
+                                  <label for="filter_extension_2">Вальмовая крыша</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_extension_3" id="filter_extension_3">
+                                  <label for="filter_extension_3">Второй свет</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_extension_4" id="filter_extension_4">
+                                  <label for="filter_extension_4">Двухскатная крыша</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_extension_5" id="filter_extension_5">
+                                  <label for="filter_extension_5">Терраса</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_extension_6" id="filter_extension_6">
+                                  <label for="filter_extension_6">Гараж</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_extension_7" id="filter_extension_7">
+                                  <label for="filter_extension_7">Зимний сад</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_extension_8" id="filter_extension_8">
+                                  <label for="filter_extension_8">Эркер</label>
+                                </div>
+                                <div class="form-checkbox">
+                                  <input type="checkbox" name="filter_extension_9" id="filter_extension_9">
+                                  <label for="filter_extension_9">Мансарда</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="expandable-trigger-wrapper filter-expandable-trigger-wrapper">
+                        <div class="btn-expandable expandable-trigger" data-expandtext="Показать все характеристики" data-collapsetext="Скрыть все характеристики"><span>Показать все характеристики</span></div>
+                      </div>
+                    </div>
+                    <div class="form-footer d-block d-md-none">
+                      <label class="d-none d-md-block">&nbsp;</label>
+                      <button class="btn btn-2" type="submit">Подобрать проект</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Фильтр END-->
+          <!-- Каталог-->
+          <div class="catalog-wrapper">
+            <div class="container">
+              <div class="mob-popup mob-popup-sort" id="sortPopup">
+                <div class="close"></div>
+                <div class="mob-popup-content">
+                  <div class="catalog-controls">
+                    <div class="catalog-controls-ttl">Сортировать по:</div>
+                    <div class="catalog-controls-item">
+                      <div class="sort-link sort-link-up active"><span>Цене</span><a class="sort-arrow sort-arrow-up active" href="#"></a><a class="sort-arrow sort-arrow-down" href="#"></a></div>
+                    </div>
+                    <div class="catalog-controls-item">
+                      <div class="sort-link"><span>Площади</span><a class="sort-arrow sort-arrow-up" href="#"></a><a class="sort-arrow sort-arrow-down" href="#"></a></div>
+                    </div>
+                    <div class="catalog-controls-item">
+                      <div class="sort-link"><span>Названию</span><a class="sort-arrow sort-arrow-up" href="#"></a><a class="sort-arrow sort-arrow-down" href="#"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-list">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4"><a class="catalog-tmb" href="#">
+                      <div class="catalog-tmb-inner">
+                        <div class="catalog-tmb-pic">
+                          <div class="catalog-tmb-badges">
+                            <div class="catalog-tmb-badges-col-1">
+                              <div class="catalog-tmb-badge catalog-tmb-badge-best"><span>Лучшее<br>предложение</span></div>
+                            </div>
+                          </div>
+                          <div class="catalog-tmb-pic-pic"><img src="files/catalog-tmb-1.jpg"></div>
+                        </div>
+                        <div class="catalog-tmb-descr">
+                          <div class="catalog-tmb-descr-top">
+                            <div class="catalog-tmb-sup-ttl">
+                              <p>Проект</p>
+                            </div>
+                            <div class="h3">Лондон</div>
+                          </div>
+                          <div class="catalog-tmb-descr-bottom">
+                            <div class="catalog-tmb-info">
+                              <div class="catalog-tmb-area"><span>220</span> м&sup2;</div>
+                              <ul class="catalog-tmb-features">
+                                <li>3 400 000 руб.</li>
+                                <li>16 580 руб./мес.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog-tmb-extra">
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Технология:</span> Монолитный железобетон</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Спален:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Санузлов:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Высота потолков:</span> 3,4 м</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Размеры дома:</span> 4 &times; 5 &times; 10 м</div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-12 col-md-6 col-lg-4"><a class="catalog-tmb" href="#">
+                      <div class="catalog-tmb-inner">
+                        <div class="catalog-tmb-pic">
+                          <div class="catalog-tmb-badges">
+                            <div class="catalog-tmb-badges-col-1">
+                              <div class="catalog-tmb-badge catalog-tmb-badge-choice"><span>2019 / выбор<br>покупателей</span></div>
+                            </div>
+                            <div class="catalog-tmb-badges-col-2">
+                              <div class="catalog-tmb-badge">
+                                <div class="catalog-tmb-badge-pic"><img src="images/badge-mortgage.svg"></div>
+                                <div class="catalog-tmb-badge-descr">
+                                  <p>Ипотека</p>
+                                </div>
+                              </div>
+                              <div class="catalog-tmb-badge">
+                                <div class="catalog-tmb-badge-pic"><img src="images/badge-hit.svg"></div>
+                                <div class="catalog-tmb-badge-descr">
+                                  <p>Хит продаж</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="catalog-tmb-pic-pic"><img src="files/catalog-tmb-2.jpg"></div>
+                        </div>
+                        <div class="catalog-tmb-descr">
+                          <div class="catalog-tmb-descr-top">
+                            <div class="catalog-tmb-sup-ttl">
+                              <p>Проект</p>
+                            </div>
+                            <div class="h3">Жемчужина России</div>
+                          </div>
+                          <div class="catalog-tmb-descr-bottom">
+                            <div class="catalog-tmb-info">
+                              <div class="catalog-tmb-area"><span>220</span> м&sup2;</div>
+                              <ul class="catalog-tmb-features">
+                                <li>3 400 000 руб.</li>
+                                <li>16 580 руб./мес.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog-tmb-extra">
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Технология:</span> Монолитный железобетон</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Спален:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Санузлов:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Высота потолков:</span> 3,4 м</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Размеры дома:</span> 4 &times; 5 &times; 10 м</div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-12 col-md-6 col-lg-4"><a class="catalog-tmb" href="#">
+                      <div class="catalog-tmb-inner">
+                        <div class="catalog-tmb-pic">
+                          <div class="catalog-tmb-pic-pic"><img src="files/catalog-tmb-3.jpg"></div>
+                        </div>
+                        <div class="catalog-tmb-descr">
+                          <div class="catalog-tmb-descr-top">
+                            <div class="catalog-tmb-sup-ttl">
+                              <p>Проект</p>
+                            </div>
+                            <div class="h3">Люксембург премиум плюс</div>
+                          </div>
+                          <div class="catalog-tmb-descr-bottom">
+                            <div class="catalog-tmb-info">
+                              <div class="catalog-tmb-area"><span>220</span> м&sup2;</div>
+                              <ul class="catalog-tmb-features">
+                                <li>3 400 000 руб.</li>
+                                <li>16 580 руб./мес.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog-tmb-extra">
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Технология:</span> Монолитный железобетон</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Спален:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Санузлов:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Высота потолков:</span> 3,4 м</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Размеры дома:</span> 4 &times; 5 &times; 10 м</div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-12 col-md-6 col-lg-4"><a class="catalog-tmb" href="#">
+                      <div class="catalog-tmb-inner">
+                        <div class="catalog-tmb-pic">
+                          <div class="catalog-tmb-badges">
+                            <div class="catalog-tmb-badges-col-1">
+                              <div class="catalog-tmb-badge catalog-tmb-badge-best"><span>Лучшее<br>предложение</span></div>
+                            </div>
+                          </div>
+                          <div class="catalog-tmb-pic-pic"><img src="files/catalog-tmb-1.jpg"></div>
+                        </div>
+                        <div class="catalog-tmb-descr">
+                          <div class="catalog-tmb-descr-top">
+                            <div class="catalog-tmb-sup-ttl">
+                              <p>Проект</p>
+                            </div>
+                            <div class="h3">Лондон</div>
+                          </div>
+                          <div class="catalog-tmb-descr-bottom">
+                            <div class="catalog-tmb-info">
+                              <div class="catalog-tmb-area"><span>220</span> м&sup2;</div>
+                              <ul class="catalog-tmb-features">
+                                <li>3 400 000 руб.</li>
+                                <li>16 580 руб./мес.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog-tmb-extra">
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Технология:</span> Монолитный железобетон</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Спален:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Санузлов:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Высота потолков:</span> 3,4 м</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Размеры дома:</span> 4 &times; 5 &times; 10 м</div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-12 col-md-6 col-lg-4"><a class="catalog-tmb" href="#">
+                      <div class="catalog-tmb-inner">
+                        <div class="catalog-tmb-pic">
+                          <div class="catalog-tmb-badges">
+                            <div class="catalog-tmb-badges-col-1">
+                              <div class="catalog-tmb-badge catalog-tmb-badge-choice"><span>2019 / <br>выбор покупателей</span></div>
+                            </div>
+                            <div class="catalog-tmb-badges-col-2">
+                              <div class="catalog-tmb-badge">
+                                <div class="catalog-tmb-badge-pic"><img src="images/badge-mortgage.svg"></div>
+                                <div class="catalog-tmb-badge-descr">
+                                  <p>Ипотека</p>
+                                </div>
+                              </div>
+                              <div class="catalog-tmb-badge">
+                                <div class="catalog-tmb-badge-pic"><img src="images/badge-hit.svg"></div>
+                                <div class="catalog-tmb-badge-descr">
+                                  <p>Хит продаж</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="catalog-tmb-pic-pic"><img src="files/catalog-tmb-2.jpg"></div>
+                        </div>
+                        <div class="catalog-tmb-descr">
+                          <div class="catalog-tmb-descr-top">
+                            <div class="catalog-tmb-sup-ttl">
+                              <p>Проект</p>
+                            </div>
+                            <div class="h3">Жемчужина России</div>
+                          </div>
+                          <div class="catalog-tmb-descr-bottom">
+                            <div class="catalog-tmb-info">
+                              <div class="catalog-tmb-area"><span>220</span> м&sup2;</div>
+                              <ul class="catalog-tmb-features">
+                                <li>3 400 000 руб.</li>
+                                <li>16 580 руб./мес.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog-tmb-extra">
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Технология:</span> Монолитный железобетон</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Спален:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Санузлов:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Высота потолков:</span> 3,4 м</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Размеры дома:</span> 4 &times; 5 &times; 10 м</div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-12 col-md-6 col-lg-4"><a class="catalog-tmb" href="#">
+                      <div class="catalog-tmb-inner">
+                        <div class="catalog-tmb-pic">
+                          <div class="catalog-tmb-pic-pic"><img src="files/catalog-tmb-3.jpg"></div>
+                        </div>
+                        <div class="catalog-tmb-descr">
+                          <div class="catalog-tmb-descr-top">
+                            <div class="catalog-tmb-sup-ttl">
+                              <p>Проект</p>
+                            </div>
+                            <div class="h3">Люксембург премиум плюс</div>
+                          </div>
+                          <div class="catalog-tmb-descr-bottom">
+                            <div class="catalog-tmb-info">
+                              <div class="catalog-tmb-area"><span>220</span> м&sup2;</div>
+                              <ul class="catalog-tmb-features">
+                                <li>3 400 000 руб.</li>
+                                <li>16 580 руб./мес.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog-tmb-extra">
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Технология:</span> Монолитный железобетон</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Спален:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Санузлов:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Высота потолков:</span> 3,4 м</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Размеры дома:</span> 4 &times; 5 &times; 10 м</div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-12 col-md-6 col-lg-4"><a class="catalog-tmb" href="#">
+                      <div class="catalog-tmb-inner">
+                        <div class="catalog-tmb-pic">
+                          <div class="catalog-tmb-badges">
+                            <div class="catalog-tmb-badges-col-1">
+                              <div class="catalog-tmb-badge catalog-tmb-badge-best"><span>Лучшее<br>предложение</span></div>
+                            </div>
+                          </div>
+                          <div class="catalog-tmb-pic-pic"><img src="files/catalog-tmb-1.jpg"></div>
+                        </div>
+                        <div class="catalog-tmb-descr">
+                          <div class="catalog-tmb-descr-top">
+                            <div class="catalog-tmb-sup-ttl">
+                              <p>Проект</p>
+                            </div>
+                            <div class="h3">Лондон</div>
+                          </div>
+                          <div class="catalog-tmb-descr-bottom">
+                            <div class="catalog-tmb-info">
+                              <div class="catalog-tmb-area"><span>220</span> м&sup2;</div>
+                              <ul class="catalog-tmb-features">
+                                <li>3 400 000 руб.</li>
+                                <li>16 580 руб./мес.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog-tmb-extra">
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Технология:</span> Монолитный железобетон</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Спален:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Санузлов:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Высота потолков:</span> 3,4 м</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Размеры дома:</span> 4 &times; 5 &times; 10 м</div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-12 col-md-6 col-lg-4"><a class="catalog-tmb" href="#">
+                      <div class="catalog-tmb-inner">
+                        <div class="catalog-tmb-pic">
+                          <div class="catalog-tmb-badges">
+                            <div class="catalog-tmb-badges-col-1">
+                              <div class="catalog-tmb-badge catalog-tmb-badge-choice"><span>2019 / <br>выбор покупателей</span></div>
+                            </div>
+                            <div class="catalog-tmb-badges-col-2">
+                              <div class="catalog-tmb-badge">
+                                <div class="catalog-tmb-badge-pic"><img src="images/badge-mortgage.svg"></div>
+                                <div class="catalog-tmb-badge-descr">
+                                  <p>Ипотека</p>
+                                </div>
+                              </div>
+                              <div class="catalog-tmb-badge">
+                                <div class="catalog-tmb-badge-pic"><img src="images/badge-hit.svg"></div>
+                                <div class="catalog-tmb-badge-descr">
+                                  <p>Хит продаж</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="catalog-tmb-pic-pic"><img src="files/catalog-tmb-2.jpg"></div>
+                        </div>
+                        <div class="catalog-tmb-descr">
+                          <div class="catalog-tmb-descr-top">
+                            <div class="catalog-tmb-sup-ttl">
+                              <p>Проект</p>
+                            </div>
+                            <div class="h3">Жемчужина России</div>
+                          </div>
+                          <div class="catalog-tmb-descr-bottom">
+                            <div class="catalog-tmb-info">
+                              <div class="catalog-tmb-area"><span>220</span> м&sup2;</div>
+                              <ul class="catalog-tmb-features">
+                                <li>3 400 000 руб.</li>
+                                <li>16 580 руб./мес.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog-tmb-extra">
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Технология:</span> Монолитный железобетон</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Спален:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Санузлов:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Высота потолков:</span> 3,4 м</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Размеры дома:</span> 4 &times; 5 &times; 10 м</div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-12 col-md-6 col-lg-4"><a class="catalog-tmb" href="#">
+                      <div class="catalog-tmb-inner">
+                        <div class="catalog-tmb-pic">
+                          <div class="catalog-tmb-pic-pic"><img src="files/catalog-tmb-3.jpg"></div>
+                        </div>
+                        <div class="catalog-tmb-descr">
+                          <div class="catalog-tmb-descr-top">
+                            <div class="catalog-tmb-sup-ttl">
+                              <p>Проект</p>
+                            </div>
+                            <div class="h3">Люксембург премиум плюс</div>
+                          </div>
+                          <div class="catalog-tmb-descr-bottom">
+                            <div class="catalog-tmb-info">
+                              <div class="catalog-tmb-area"><span>220</span> м&sup2;</div>
+                              <ul class="catalog-tmb-features">
+                                <li>3 400 000 руб.</li>
+                                <li>16 580 руб./мес.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="catalog-tmb-extra">
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Технология:</span> Монолитный железобетон</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Спален:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Санузлов:</span> 2</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Высота потолков:</span> 3,4 м</div>
+                          <div class="catalog-tmb-extra-item"><span class="ttl">Размеры дома:</span> 4 &times; 5 &times; 10 м</div>
+                        </div>
+                      </div></a></div>
+                </div>
+              </div>
+              <div class="page-nav">
+                <div class="modern-page-navigation"><span class="modern-page-title">Страницы:</span><a class="modern-page-previous" href="#">Назад</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><span class="modern-page-current">5</span><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a><a href="#">11</a><a class="modern-page-next" href="#">Вперед</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Каталог END-->
+          <!-- Текст-->
+          <div class="section section-text">
+            <div class="section-content">
+              <div class="container">
+                <h1>Покупка готовых домов у производителя</h1>
+                <p>Компания «ДСК Загородный дом» уже более 10 лет предоставляет услуги по строительству коттеджей. Мы по доступным ценам выполняем строительство домов под ключ в Москве и Московской области. Для этого используется технология сборно-монолитного строения для возведения домов. Наша компания имеет собственное производство, парк техники и проектно-архитектурное бюро. Офис продаж находится всего в 4 км от МКАД на Новорижском шоссе. Мы осуществляем строительство коттеджей из таких материалов, как газоблоки, керамоблоки и железобетонные панели.</p>
+                <p>Работа по индивидуальным заказам. Сотрудники компании могут недорого построить дом по индивидуальному заказу. Стоимость и сроки уточняйте у наших специалистов. Большой выбор готовых проектов. Компания предлагает готовые проекты коттеджей, которые различаются по габаритам, жилой площади и площади дома, количеству спальных комнат и т. д. Гарантия сроков и качества. Мы возводим надежные строения, так как используем материалы от ведущих производителей. Все обязательства компании по строительству коттеджей и сроки выполнения работ прописываются в договоре. Мы даем гарантию 15 лет на построенные здания. Быстрые сроки. Мы предлагаем оперативное выполнение работ. Монтаж здания на готовом фундаменте выполняется за 1 месяц. Срок строительства загородных домов под ключ – один сезон.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Текст END-->
+          <!-- Заявка-->
+          <div class="section section-order">
+            <div class="section-content">
+              <div class="order-content">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="order-descr">
+                        <div class="section-header">
+                          <div class="h2">Оставьте<br>заявку</div>
+                        </div>
+                        <div class="order-form">
+                          <form>
+                            <div class="form-group">
+                              <label class="placeholder" for="order_name">Представьтесь</label>
+                              <input type="text" name="order_name" id="order_name" placeholder=" " required>
+                            </div>
+                            <div class="form-group">
+                              <label class="placeholder" for="order_phone">+7 (000) 000-00-00</label>
+                              <input class="input-phone" type="text" name="order_phone" id="order_phone" placeholder=" " required>
+                            </div>
+                            <div class="form-footer">
+                              <button class="btn btn-1" type="submit">Отправить заявку</button>
+                            </div>
+                            <div class="form-agree">
+                              <p>Нажимая кнопку “Отправить” вы даете свое согласие с <a href="#">Политикой конфиденциальности</a></p>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-pic" style="background-image: url(files/order-pic.jpg);"></div>
+            </div>
+          </div>
+          <!-- Заявка END-->
+        </div>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="footer-logo"><a href="/"><img src="images/logo.svg" alt="ДСК"></a></div>
+                <div class="footer-copy d-none d-md-block">
+                  <p>АО ЛюксАртХаус (ДСК Загородный дом)<br> &copy; 2014 - 2017. Все права защищены</p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="footer-contacts">
+                  <div class="footer-contacts-section">
+                    <div class="footer-phone"><a href="tel:+7 (495) 181-15-17">+7 (495) 181-15-17</a></div>
+                    <div class="footer-timetable">
+                      <p>Пн-Пт: 9:00-18:00</p>
+                    </div>
+                  </div>
+                  <div class="footer-contacts-section">
+                    <div class="footer-address">
+                      <p>МО, деревня "Гольево", дом 33</p>
+                    </div>
+                    <div class="footer-email">
+                      <p><a href="mailto:sale@luxarthaus.ru">sale@luxarthaus.ru</a></p>
+                    </div>
+                  </div>
+                  <div class="footer-policy">
+                    <p><a href="#">Политика конфиденциальности</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <ul class="footer-menu">
+                  <li><a href="#">Проекты</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Цены</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Технологии</a></li>
+                  <li><a href="#">О&nbsp;компании</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <ul class="footer-menu-alt">
+                  <li><a href="#">Дома из газоблоков</a></li>
+                  <li><a href="#">Одноэтажные дома из газоблоков</a></li>
+                  <li><a href="#">Монолитные частные дома</a></li>
+                  <li><a href="#">Монолитные дома</a></li>
+                  <li><a href="#">Коттеджи</a></li>
+                  <li><a href="#">Коттеджи из газобетона</a></li>
+                  <li><a href="#">Одноэтажные коттеджи</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-copy d-block d-md-none">
+              <p>АО ЛюксАртХаус (ДСК Загородный дом)<br> &copy; 2014 - 2017. Все права защищены</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade form-modal" id="consultModal" tabindex="-1">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/modal-close.svg"></button>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="h2">Записаться на&nbsp;консультацию</div>
+            </div>
+            <div class="modal-body">
+              <div class="modal-form">
+                <form>
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="consult_name">Представьтесь</label>
+                        <input type="text" name="consult_name" id="consult_name" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="consult_phone">+7 (000) 000-00-00</label>
+                        <input class="input-phone" type="text" name="consult_phone" id="consult_phone" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <button class="btn btn-1" type="submit">Отправить заявку</button>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-agree">
+                        <p>Нажимая кнопку “Отправить” вы даете свое согласие с <a href="#">Политикой конфиденциальности</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="viewModal" tabindex="-1">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/modal-close.svg"></button>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="h2">Записаться на&nbsp;просмотр</div>
+            </div>
+            <div class="modal-body">
+              <div class="modal-form">
+                <form>
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="view_name">Представьтесь</label>
+                        <input type="text" name="view_name" id="view_name" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="view_phone">+7 (000) 000-00-00</label>
+                        <input class="input-phone" type="text" name="view_phone" id="view_phone" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <button class="btn btn-1" type="submit">Отправить заявку</button>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-agree">
+                        <p>Нажимая кнопку “Отправить” вы даете свое согласие с <a href="#">Политикой конфиденциальности</a>    </p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="orderModal" tabindex="-1">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/modal-close.svg"></button>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="h2">Оставить заявку</div>
+            </div>
+            <div class="modal-body">
+              <div class="modal-form">
+                <form>
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="order_modal_name">Представьтесь</label>
+                        <input type="text" name="order_modal_name" id="order_modal_name" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-group">
+                        <label class="placeholder" for="order_modal_phone">+7 (000) 000-00-00</label>
+                        <input class="input-phone" type="text" name="order_modal_phone" id="order_modal_phone" required>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="placeholder" for="order_modal_message">Сообщение</label>
+                        <textarea class="textarea-autogrow" name="order_modal_message" id="order_modal_message" rows="1"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <button class="btn btn-1" type="submit">Отправить заявку</button>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="form-agree">
+                        <p>Нажимая кнопку “Отправить” вы даете свое согласие с <a href="#">Политикой конфиденциальности</a>                  </p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade success-modal" id="successModal" tabindex="-1">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close.svg"></button>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="h2"><span>Ваша заявка успешно принята!</span></div>
+            </div>
+            <div class="modal-body">
+              <div class="text">
+                <p>Перезвоним в течение 15 минут</p>
+              </div>
+              <div class="success-modal-button">
+                <button class="btn btn-1" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wNumb.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script src="js/jquery.countdown-ru.js"></script>
+      <script src="js/fancybox/jquery.fancybox.min.js"></script>
+      <script src="js/nouislider/nouislider.min.js"></script>
+      <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="js/main.js"></script>
+      <script src="js/geo-map.js"></script>
+    </div>
+  </body>
+</html>
