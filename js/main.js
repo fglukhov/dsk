@@ -1603,11 +1603,24 @@ function slickResponsive() {
 
 	if ($("#mobile-indicator").css("display") == "block") {
 
+		if (!$(".samples-list .row").hasClass("slick-initialized")) {
 
+			$(".samples-list .row").slick({
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				dots: true,
+				rows: 0
+			});
+
+		}
 
 	} else {
 
+		if ($(".samples-list .row").hasClass("slick-initialized")) {
 
+			$(".samples-list .row").slick("unslick");
+
+		}
 
 	}
 
