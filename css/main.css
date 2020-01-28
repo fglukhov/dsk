@@ -3798,6 +3798,9 @@ a.catalog-all-link:focus {
 .page-header-calc ul.breadcrumb {
   color: rgba(255, 255, 255, 0.3); }
 
+.page-header-calc ul.breadcrumb > li:after {
+  color: rgba(255, 255, 255, 0.3); }
+
 .page-header-calc ul.breadcrumb a,
 .page-header-calc ul.breadcrumb a:focus {
   color: rgba(255, 255, 255, 0.3); }
@@ -3956,3 +3959,15 @@ a.catalog-all-link:focus {
 
 .section-calc-alt .calc-price-wrapper .hr {
   margin: 20px 0 35px 0; }
+
+.loading {
+  position: relative; }
+
+.loading:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9) url(../images/spinner.svg) center center no-repeat; }
